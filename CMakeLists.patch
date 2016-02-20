@@ -1,0 +1,11 @@
+--- LunarGLASS-55f8dd9b8628c0a14772e17be2e90a9ded1a75e5/CMakeLists.txt~	2016-02-16 23:14:26.000000000 +0100
++++ LunarGLASS-55f8dd9b8628c0a14772e17be2e90a9ded1a75e5/CMakeLists.txt	2016-02-18 21:59:40.857742867 +0100
+@@ -49,7 +49,7 @@
+     # Get system library dependencies from llvm-config.
+     execute_process(COMMAND ${LLVM_BUILD}/install/usr/local/bin/llvm-config --ldflags OUTPUT_VARIABLE LLVM_LD_FLAGS)
+     # Convert to a list of link flags.
+-    string(REPLACE " " ";" LLVM_LD_FLAGS_LIST ${LLVM_LD_FLAGS})
++    string(REPLACE " " ";" LLVM_LD_FLAGS_LIST "${LLVM_LD_FLAGS}")
+     foreach(LIB ${LLVM_LD_FLAGS_LIST})
+       if (${LIB} MATCHES "^-l")
+         # Get the library's name.

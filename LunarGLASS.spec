@@ -27,23 +27,23 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 LunarGLASS is an LLVM-based shader-compiler stack available to
-open-source devel opers. It brings a new approach by splitting the
-common shared intermediate repr esentation (IR) into two levels; the
-top level is completely platform independen t while the bottom level
-is dynamically tailorable to different families of arch itecture. Both
+open-source developers. It brings a new approach by splitting the
+common shared intermediate representation (IR) into two levels; the
+top level is completely platform independent while the bottom level is
+dynamically tailorable to different families of architecture. Both
 levels still lend themselves to portability and sharing of tools.
 Together, they solve the problem of having a standard portable IR
 without being biased toward a specific class of target architecture.
 
 LunarGLASS is a long-term compiler stack architecture, based on
-establishing com mon intermediate representations (IRs) allowing
+establishing common intermediate representations (IRs) allowing
 modularity between stack layers. Each source-language front end would
-benefit from a common set of high- and mid
-- -level optimizations, as would each back end, without the need to
-  invent additio nal IRs. The short-term goal is to leverage investments
-  in existing IRs while th e long-term goal is to reduce the number of
-  IRs and not require optimization dif ficulties caused by losing
-  information going through an IR.
+benefit from a common set of high- and mid-level optimizations, as
+would each back end, without the need to invent additional IRs. The
+short-term goal is to leverage investments in existing IRs while the
+long-term goal is to reduce the number of IRs and not require
+optimization difficulties caused by losing information going through
+an IR.
 
 %package devel
 Summary:	Header files for %{name} library

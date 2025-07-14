@@ -58,7 +58,7 @@ Pliki nagłówkowe biblioteki %{name}.
 
 %prep
 %setup -qn %{name}-%{commit}
-%patch0 -p1
+%patch -P0 -p1
 
 cd Core/LLVM/llvm-3.4
 tar -x --strip-components=1 --skip-old-files -f %{SOURCE1}
